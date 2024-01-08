@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
+import './layout.css';
+import Gameone from '../game1/app.tsx';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,8 +16,25 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+  <html lang="en">
+  <head>
+    <meta charSet="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>game creator</title>
+  </head>
+  <body>
+    <main>
+      <article>
+        <h1>Welcome to game creator per day</h1>
+        <p>
+          this web is intended to make games per day, they dont need to be complex but should have interactivity and scores
+        </p>
+      </article>
+      
+      <Gameone/>
+
+    </main>
+  </body>
+  </html>
   )
 }

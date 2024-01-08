@@ -1,0 +1,62 @@
+.gameOne-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #ccc;
+    font-size: 2em;
+}
+
+.three-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+}
+
+.three-menu{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #ccc;
+}
+
+
+.three-menu button{
+    background-color: #333;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 1em;
+}
+.three-menu button:hover{
+    outline: 1px solid #a1a1a1;
+}
+.three-menu button:active{
+    background-color:#a1a1a1;
+    color: #333;
+}
+
+
+.three-content{
+    width: 200px;
+    height: 200px;
+    outline: .5px solid #ccc;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.three-content:hover{
+    outline: 1px solid #7c7c7c;
+}
+
+.innerXO{
+    color: #ccc;
+    font-size: 150px;
+}
